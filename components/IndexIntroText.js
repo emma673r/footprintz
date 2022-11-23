@@ -4,11 +4,12 @@ import React from "react";
 function IndexIntroText() {
   return (
     <>
-      <h2>How much CO2 do you emit when online?🤔</h2>
+      <h2>
+        How much <span>CO2</span> do you emit when online? 🤔
+      </h2>
       <div>
-        <p>
-          To make all data relateable, we will be using <span>beans</span> as a
-          means of comparison
+        <p className="white_border">
+          To make all data relateable, we will be using <span>beans</span> as a means of comparison
         </p>
       </div>
       <div>

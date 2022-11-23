@@ -27,6 +27,7 @@ $fontsize-text: 1rem;
   font-size: 12px;
   text-decoration: none;
   color: $color-lightest;
+  text-align: left;
 }
 
 em,
@@ -55,16 +56,19 @@ h2,
 h3,
 h4 {
   font-family: $courier;
+  font-weight: 500;
 }
 
 h1 {
-  font-size: $fontsize-1;
-  color: $color-accent;
-}
-h2 {
   font-size: $fontsize-2;
   color: $color-accent;
 }
+
+h2 {
+  font-size: $fontsize-3;
+  color: $color-lightest;
+}
+
 h3 {
   font-size: $fontsize-3;
 }
@@ -72,8 +76,18 @@ h4 {
   font-size: $fontsize-4;
 }
 
+main {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
 header {
   background-color: $color-lightest;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
 footer {
@@ -114,6 +128,16 @@ input:invalid {
 input:valid {
   outline: none;
   border: greenyellow solid 2px;
+}
+
+span {
+  color: $color-accent;
+  font-size: inherit;
+}
+
+.white_border {
+  border: 2px $color-lightest solid;
+  padding: 1rem;
 }
 
 // **OTHER THEME
