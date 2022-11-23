@@ -9,3 +9,17 @@ export default function Home() {
     </>
   );
 }
+
+const beanData = {
+  name: "beans",
+  quantity: 1,
+  equivalence: "g CO2e",
+  equivalentNumber: 0.00052,
+};
+
+const carbonData = {
+  name: "g CO2e",
+  quantity: 0.1,
+  equivalence: "beans",
+  equivalentNumber: 1900,
+};
