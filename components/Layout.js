@@ -12,7 +12,18 @@ function Layout({ children }) {
         <nav></nav>
       </header>
       <main>{children}</main>
-      <footer></footer>
+      <footer>
+        <div>
+          <p>💚 - Be aware. Make a difference.</p>
+        </div>
+        <div>
+          <p>(LINK) SEE MORE INFORMATION</p>
+        </div>
+        <div>
+          <p>Copyright 2022 Anna Lester & Emma Pasquer</p>
+          <p>In cooperation with ADVICE</p>
+        </div>
+      </footer>
     </>
   );
 }
