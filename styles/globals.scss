@@ -179,6 +179,28 @@ span {
   padding-bottom: 3vh;
 }
 
+.information_wrapper {
+  padding-left: 2vw;
+  padding-right: 2vw;
+
+  h2 {
+    text-align: center;
+  }
+
+  h3,
+  p,
+  em,
+  span {
+    text-align: justify;
+  }
+
+  p {
+    max-width: 42ch;
+    line-height: 2rem;
+    padding-bottom: 0.8vh;
+  }
+}
+
 // **OTHER THEME
 
 // @media (prefers-color-scheme: dark) {

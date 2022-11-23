@@ -14,10 +14,10 @@ function IndexIntroText() {
       </div>
       <div>
         <p>
-          Bean SVG here <span>=</span> 0.00052g CO2e
+          1 (Bean SVG here) <span>=</span> 0.00052g CO2e
         </p>
         <p>
-          Bean SVG here <span>=</span> 5.2g CO2e
+          1000 (Bean SVG here) <span>=</span> 5.2g CO2e
         </p>
       </div>
       <h3>
