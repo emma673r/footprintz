@@ -1,11 +1,20 @@
 import Head from "next/head";
-
+import IndexIntroText from "../components/IndexIntroText";
+import StreamButton from "../components/StreamButton";
+import SomeButton from "../components/SomeButton";
 export default function Home() {
   return (
     <>
       <Head>
         <title>FOOTPRINTZ</title>
       </Head>
+      <main>
+        <IndexIntroText />
+        <div className="s-buttons">
+          <StreamButton />
+          <SomeButton />
+        </div>
+      </main>
     </>
   );
 }
