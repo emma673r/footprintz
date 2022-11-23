@@ -1,0 +1,82 @@
+[
+  {
+    "application": "Youtube",
+    "impact of newsfeed/min": "0.46 gEqCO2/min",
+    "2021 rank": "1",
+    "2020 evolution": "=",
+    "water resource": "0.08 Liters",
+    "land use": "0.92 m²"
+  },
+  {
+    "application": "Twitch",
+    "impact of newsfeed/min": "0.55 gEqCO2/min",
+    "2021 rank": "2",
+    "2020 evolution": "+3",
+    "water resource": "0.09 Liters",
+    "land use": "1.01 m²"
+  },
+  {
+    "application": "Twitter",
+    "impact of newsfeed/min": "0.60 gEqCO2/min",
+    "2021 rank": "3",
+    "2020 evolution": "+1",
+    "water resource": "0.10 Liters",
+    "land use": "1.14 m²"
+  },
+  {
+    "application": "LinkedIn",
+    "impact of newsfeed/min": "0.71 gEqCO2/min",
+    "2021 rank": "4",
+    "2020 evolution": "-1",
+    "water resource": "0.10 Liters",
+    "land use": "1.00 m²"
+  },
+  {
+    "application": "Facebook",
+    "impact of newsfeed/min": "0.79 gEqCO2/min",
+    "2021 rank": "5",
+    "2020 evolution": "-3",
+    "water resource": "0.12 Liters",
+    "land use": "1.38 m²"
+  },
+  {
+    "application": "Snapchat",
+    "impact of newsfeed/min": "0.87 gEqCO2/min",
+    "2021 rank": "6",
+    "2020 evolution": "+1",
+    "water resource": "0.12 Liters",
+    "land use": "1.29 m²"
+  },
+  {
+    "application": "Instagram",
+    "impact of newsfeed/min": "1.05 gEqCO2/min",
+    "2021 rank": "7",
+    "2020 evolution": "-1",
+    "water resource": "0.12 Liters",
+    "land use": "1.03 m²"
+  },
+  {
+    "application": "Pinterest",
+    "impact of newsfeed/min": "1.30 gEqCO2/min",
+    "2021 rank": "8",
+    "2020 evolution": "=",
+    "water resource": "0.15 Liters",
+    "land use": "1.25 m²"
+  },
+  {
+    "application": "Reddit",
+    "impact of newsfeed/min": "2.48 gEqCO2/min",
+    "2021 rank": "9",
+    "2020 evolution": "=",
+    "water resource": "0.23 Liters",
+    "land use": "1.35 m²"
+  },
+  {
+    "application": "TikTok",
+    "impact of newsfeed/min": "2.63 gEqCO2/min",
+    "2021 rank": "10",
+    "2020 evolution": "=",
+    "water resource": "0.27 Liters",
+    "land use": "1.88 m²"
+  }
+]
