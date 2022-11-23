@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import Book from "./Book";
 
 function EndBad() {
   return (
@@ -9,7 +10,7 @@ function EndBad() {
         Here(link) are some tips and tricks on how to be carbon friendly when
         you're online💚 ♻️
       </p>
-      <p>Insert SVG book here</p>
+      <Book></Book>
       <button>Restart</button>
     </>
   );
