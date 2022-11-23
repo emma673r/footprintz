@@ -176,6 +176,12 @@ span {
   padding-bottom: 1vh;
 }
 
+.flex_hor_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .be_aware {
   padding-bottom: 3vh;
 }

@@ -10,20 +10,23 @@ function IndexIntroText() {
       </h2>
       <div>
         <p className="white_border">
-          To make all data relateable, we will be using <span>beans</span> as a
-          means of comparison
+          To make all data relateable, we will be using <span>beans</span> as a means of comparison
         </p>
       </div>
       <div>
-        <div>
-          <p>1 x</p>
+        <div className="flex_hor_wrapper">
+          <p>1</p>
           <SingleBean />
-          <p>= 0.00052g CO2e</p>
+          <p>
+            <span>=</span> 0.00052g CO2e
+          </p>
         </div>
-        <div>
-          <p>1000 x</p>
+        <div className="flex_hor_wrapper">
+          <p>1000</p>
           <SingleBean />
-          <p>= 5.2g CO2e</p>
+          <p>
+            <span>=</span> 5.2g CO2e
+          </p>
         </div>
       </div>
       <h3>
