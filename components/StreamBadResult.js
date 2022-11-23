@@ -1,4 +1,5 @@
 import React from "react";
+import WhiteArrow from "./WhiteArrow";
 
 function StreamBadResult() {
   return (
@@ -8,7 +9,7 @@ function StreamBadResult() {
       <p>
         The typical European streams 167.4 min/day and emits 153.45g CO2e/day.
       </p>
-      <div>WHITE ARROW HERE</div>
+      <WhiteArrow></WhiteArrow>
     </>
   );
 }

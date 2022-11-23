@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import Medal from "./Medal";
 
 function EndGood() {
   return (
     <>
       <p>Keep up the excellent work! Here's your medal!💚♻️</p>
-      <p>Insert SVG medal here</p>
+      <Medal></Medal>
       <button>Restart</button>
     </>
   );
