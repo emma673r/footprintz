@@ -67,11 +67,16 @@ h1 {
 h2 {
   font-size: $fontsize-3;
   color: $color-lightest;
+  padding-bottom: 3vh;
+  padding-top: 5vh;
 }
 
 h3 {
-  font-size: $fontsize-3;
+  font-size: $fontsize-4;
+  padding-bottom: 5vh;
+  padding-top: 3vh;
 }
+
 h4 {
   font-size: $fontsize-4;
 }
@@ -92,6 +97,8 @@ header {
 
 footer {
   background-color: $color-dark;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
 }
 
 button {
@@ -100,6 +107,7 @@ button {
   border: 2px $color-accent solid;
   padding: 10px;
   background-color: transparent;
+  font-family: $courier;
 }
 
 button:hover {
@@ -137,7 +145,38 @@ span {
 
 .white_border {
   border: 2px $color-lightest solid;
-  padding: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2vh;
+}
+
+.s-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding-bottom: 7vh;
+  button {
+    width: 15ch;
+    height: 8ch;
+    font-size: $fontsize-4;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: $fontsize-4;
+  }
+}
+
+.flex_wrapper {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  padding-bottom: 1vh;
+}
+
+.be_aware {
+  padding-bottom: 3vh;
 }
 
 // **OTHER THEME

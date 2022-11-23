@@ -13,10 +13,17 @@ function IndexIntroText() {
         </p>
       </div>
       <div>
-        <p>Bean SVG here = 0.00052g CO2e</p>
-        <p>Bean SVG here = 5.2g CO2e</p>
+        <p>
+          Bean SVG here <span>=</span> 0.00052g CO2e
+        </p>
+        <p>
+          Bean SVG here <span>=</span> 5.2g CO2e
+        </p>
       </div>
-      <h3>Now that you know, let's get started</h3>
+      <h3>
+        Now that you know <br />
+        Let's get started
+      </h3>
     </>
   );
 }

@@ -13,15 +13,18 @@ function Layout({ children }) {
       </header>
       <main>{children}</main>
       <footer>
-        <div>
-          <p>💚 - Be aware. Make a difference.</p>
+        <div className="flex_wrapper be_aware">
+          <p>💚</p>
+          <p>
+            <em>Be aware. Make a difference.</em>
+          </p>
         </div>
-        <div>
+        <div className="flex_wrapper">
           <p>(LINK) SEE MORE INFORMATION</p>
         </div>
-        <div>
-          <p>Copyright 2022 Anna Lester & Emma Pasquer</p>
-          <p>In cooperation with ADVICE</p>
+        <div className="flex_wrapper">
+          <p>Copyright © 2022 Anna Lester & Emma Pasquer</p>
+          <p>In cooperation with (link)ADVICE</p>
         </div>
       </footer>
     </>
