@@ -150,6 +150,17 @@ span {
   margin-bottom: 2vh;
 }
 
+.no_class {
+  border: none;
+  padding: 0;
+  background-color: none;
+}
+.no_class:hover {
+  border: none;
+  padding: 0;
+  background-color: none;
+}
+
 .s-buttons {
   display: flex;
   flex-direction: column;
