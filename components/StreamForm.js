@@ -11,13 +11,7 @@ function StreamForm() {
         <div class="form-group">
           <label for="streaming">Hours/day</label>
           <div class="input-group">
-            <input
-              type="text"
-              id="streaming"
-              name="streaming"
-              inputmode="numeric"
-              required
-            />
+            <input type="text" id="streaming" name="streaming" inputmode="numeric" required />
           </div>
           <button>CALCULATE</button>
           <p>We’re talking YouTube, Netflix, Twitch, HBO etc.</p>

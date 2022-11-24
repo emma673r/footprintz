@@ -3,42 +3,45 @@ import IndexIntroText from "../components/IndexIntroText";
 import StreamButton from "../components/StreamButton";
 import SomeButton from "../components/SomeButton";
 import SomeForm from "../components/SomeForm";
+import StreamForm from "../components/StreamForm";
 import { useState } from "react";
 
 export default function Home() {
   const [showSomeForm, setShowSomeForm] = useState(false);
+  const [showStreamForm, setShowStreamForm] = useState(false);
 
-  const [data, setData] = useState("");
+  // ** state is the data we get from child, which is (true) in this case (because of onclick action in child)
+  const loadSomeForm = (state) => {
+    setShowSomeForm(state);
+  };
 
-  const childToParent = (data) => {
-    console.log(data);
-    setData(data);
-    setShowSomeForm(data);
+  const loadStreamForm = (state) => {
+    setShowStreamForm(state);
   };
 
   return (
     <>
-      {/* {!showSomeForm && <button onClick={() => setShowSomeForm(true)}>How much social media do I use?</button>} */}
-      {!showSomeForm && (
+      {/* if showSomeForm false -> show the basic index intro components */}
+
+      {!showSomeForm && !showStreamForm && (
         <>
           <IndexIntroText />
           <div className="s-buttons">
-            <StreamButton />
-            <SomeButton childToParent={childToParent} />
+            <StreamButton loadStreamForm={loadStreamForm} />
+            <SomeButton loadSomeForm={loadSomeForm} />
           </div>
         </>
       )}
+
+      {/* if showSomeForm = true -> show only the some form */}
+      {/* if showStreamForm = true -> show only the stream form */}
+
       {showSomeForm && <SomeForm />}
+      {showStreamForm && <StreamForm />}
 
       <Head>
         <title>FOOTPRINTZ</title>
       </Head>
-
-      {/* <IndexIntroText />
-      <div className="s-buttons">
-        <StreamButton />
-        <SomeButton onClick={() => setShowSomeForm(true)} />
-      </div> */}
     </>
   );
 }

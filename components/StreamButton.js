@@ -1,9 +1,15 @@
 import React from "react";
 
-function StreamButton() {
+function StreamButton({ loadStreamForm }) {
   return (
     <>
-      <button>How much do I stream?</button>
+      <button
+        onClick={() => {
+          loadStreamForm(true);
+        }}
+      >
+        How much do I stream?
+      </button>
     </>
   );
 }
