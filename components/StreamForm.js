@@ -1,10 +1,15 @@
 import React from "react";
 import { useRef } from "react";
 import { useState, useEffect } from "react";
-// import StreamGoodResult from "../components/StreamGoodResult";
+import StreamGoodResult from "../components/StreamGoodResult";
+import StreamBadResult from "../components/StreamBadResult";
+import StreamAverageResult from "../components/StreamAverageResult";
 
 function StreamForm() {
+  const [receivedData, setReceivedData] = useState({});
+  const [calculatedState, setCalculatedState] = useState("");
   const [streamDataSent, setStreamDataSent] = useState(false);
+
   const streamData = useRef(null);
 
   const streamingDataJson = {
@@ -18,37 +23,44 @@ function StreamForm() {
   function submitStreamForm(e) {
     e.preventDefault();
 
-    const data = {
+    setReceivedData({
       name: streamData.current[0].id,
-      minutes: streamData.current[0].value,
-    };
-    data.minutes = parseInt(data.minutes);
+      minutes: parseInt(streamData.current[0].value),
+    });
 
     // console.log(data);
-    function calculateStreamData(data) {
-      console.log(data);
+
+    function calculateStreamData(receivedData) {
+      console.log(receivedData);
       console.log(streamingDataJson);
 
-      if (data.minutes < streamingDataJson.averageTimeMin - 30) {
+      if (receivedData.minutes < streamingDataJson.averageTimeMin - 30) {
         console.log("you are under average");
-        // return <StreamGoodResult data={data} />;
-      } else if (data.minutes > streamingDataJson.averageTimeMin + 30) {
+        return "UNDER";
+        // return <StreamGoodResult data={data} streamData={streamingDataJson} />;
+      } else if (receivedData.minutes > streamingDataJson.averageTimeMin + 30) {
         console.log("You are above average");
+        return "ABOVE";
+        // return <StreamBadResult data={data} streamData={streamingDataJson} />;
       } else {
         console.log("You are average");
+        return " ";
+        // return <StreamAverageResult data={data} streamData={streamingDataJson} />;
       }
     }
 
-    if (data && data.name) {
+    if (receivedData && receivedData.name) {
+      setCalculatedState(calculateStreamData(receivedData));
+      console.log(calculatedState);
+
       setStreamDataSent(true);
-      calculateStreamData(data);
     }
   }
 
   return (
     <>
       {streamDataSent ? (
-        <p>Yes</p>
+        <StreamAverageResult calculatedState={calculatedState} receivedData={receivedData} streamingDataJson={streamingDataJson} />
       ) : (
         <>
           <div className="stream-text">

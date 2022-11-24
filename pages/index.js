@@ -55,7 +55,7 @@ const beanData = {
 
 const carbonData = {
   name: "g CO2e",
-  quantity: 0.1,
+  quantity: 1,
   equivalence: "beans",
-  equivalentNumber: 1900,
+  equivalentNumber: 19000,
 };

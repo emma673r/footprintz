@@ -1,11 +1,11 @@
 import React from "react";
 
-function SomeButton({ loadStreamingForm }) {
+function SomeButton({ loadSomeForm }) {
   return (
     <>
       <button
         onClick={() => {
-          loadStreamingForm(true);
+          loadSomeForm(true);
         }}
       >
         How much social media do I use?
