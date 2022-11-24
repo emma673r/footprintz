@@ -1,5 +1,5 @@
 import React from "react";
-
+import Anchor from "../components/Anchor";
 function information() {
   return (
     <>
@@ -62,24 +62,74 @@ function information() {
         extras for you.
       </p>
       <div>
+        <Anchor href={"https://sustainablewebdesign.org/"}>
+          General information on sustainable web design
+        </Anchor>
+        <Anchor
+          href={
+            "https://www.viessmann.co.uk/en/company/blog/the-worlds-digital-carbon-footprint.html"
+          }
+        >
+          Digital carbon footprint explained
+        </Anchor>
+        <Anchor
+          href={
+            "https://www.greenjournal.co.uk/2022/06/how-to-be-more-environmentally-friendly-online/"
+          }
+        >
+          How to become more sustainable online
+        </Anchor>
+        <Anchor
+          href={
+            "https://wayofbeing.co/blogs/news/12-easy-ways-to-minimize-your-digital-carbon-footprint"
+          }
+        >
+          Minimize footprint
+        </Anchor>
+        <Anchor
+          href={
+            "https://nuvomagazine.com/daily-edit/how-to-reduce-your-digital-carbon-footprint"
+          }
+        >
+          More on minimizing footprint
+        </Anchor>
+        <Anchor
+          href={
+            "https://blog.mozilla.org/en/internet-culture/deep-dives/digital-carbon-footprint/"
+          }
+        >
+          Deep dive digital carbon footprint
+        </Anchor>
+        <Anchor
+          href={
+            "https://www.weforum.org/agenda/2021/12/digital-carbon-footprint-how-to-lower-electronics"
+          }
+        >
+          How to lower electronics
+        </Anchor>
+        <Anchor
+          href={"https://green-action-elt.uk/act-now/digital-carbon-footprint/"}
+        >
+          Act now: digital carbon footprint
+        </Anchor>
+        <Anchor
+          href={
+            "https://impakter.com/10-ways-to-reduce-your-digital-carbon-footprint/"
+          }
+        >
+          10 ways to reduce
+        </Anchor>
         <p>
-          https://sustainablewebdesign.org/ This site contains general
-          information on sustainable web design.
-          https://www.viessmann.co.uk/en/company/blog/the-worlds-digital-carbon-footprint.html
-          This site explains digital carbon footprint.
-          https://www.greenjournal.co.uk/2022/06/how-to-be-more-environmentally-friendly-online/
-          https://wayofbeing.co/blogs/news/12-easy-ways-to-minimize-your-digital-carbon-footprint
-          https://nuvomagazine.com/daily-edit/how-to-reduce-your-digital-carbon-footprint
-          https://blog.mozilla.org/en/internet-culture/deep-dives/digital-carbon-footprint/
-          This sites helps you get started on being greener online.
-          https://www.weforum.org/agenda/2021/12/digital-carbon-footprint-how-to-lower-electronics
-          https://green-action-elt.uk/act-now/digital-carbon-footprint/
-          https://impakter.com/10-ways-to-reduce-your-digital-carbon-footprint/
-          This sites helps you get even better than you already are.
-          https://geekflare.com/reduce-digital-footprint-tools/
-          https://digitalbeacon.co/ And these are really cool tools you might
-          want to check out !
+          This sites helps you get even better than you already are:
+          <Anchor
+            href={"https://geekflare.com/reduce-digital-footprint-tools/"}
+          >
+            tools to reduce digital footprint
+          </Anchor>
         </p>
+        <Anchor href={"https://digitalbeacon.co/"}>
+          Really cool tools you might want to check out!
+        </Anchor>
       </div>
       <h5>WHERE DID YOU PULL YOUR INFO FROM?</h5>
       <p>
@@ -90,18 +140,6 @@ function information() {
         !All data has been collected form serious sources but because of lack of
         certain types of data, the numbers are a little subjective.
       </p>
-      <footer>
-        <div>
-          <p>💚 - Be aware. Make a difference.</p>
-        </div>
-        <div>
-          <p>(LINK) GO BACK TO MAIN PAGE</p>
-        </div>
-        <div>
-          <p>Copyright 2022 Anna Lester & Emma Pasquer</p>
-          <p>In cooperation with ADVICE</p>
-        </div>
-      </footer>
     </>
   );
 }
