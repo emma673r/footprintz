@@ -59,21 +59,44 @@ function StreamForm() {
   return (
     <>
       {streamDataSent ? (
-        <StreamAverageResult calculatedState={calculatedState} receivedData={receivedData} streamingDataJson={streamingDataJson} />
+        <StreamAverageResult
+          calculatedState={calculatedState}
+          receivedData={receivedData}
+          streamingDataJson={streamingDataJson}
+        />
       ) : (
         <>
           <div className="stream-text">
-            <h1>How much CO2 do you daily emit when you stream?🤔</h1>
-            <p>Type how many minutes on average you spend streaming videos online</p>
+            <h2>How much CO2 do you daily emit when you stream?🤔</h2>
+            <p>
+              <em>
+                Type how many minutes on average you spend streaming videos
+                online
+              </em>
+            </p>
           </div>
-          <form onSubmit={submitStreamForm} ref={streamData} className="stream-form">
-            <div className="form-group">
+          <form
+            onSubmit={submitStreamForm}
+            ref={streamData}
+            className="stream-form flex_wrapper"
+          >
+            <div className="form-group flex_wrapper">
               <div className="input-group">
-                <input type="text" id="streaming" name="streaming" inputMode="numeric" pattern="[0-999]+" required />{" "}
+                <input
+                  type="text"
+                  id="streaming"
+                  name="streaming"
+                  inputMode="numeric"
+                  pattern="[0-999]+"
+                  maxLength={"6ch"}
+                  required
+                />{" "}
                 <label htmlFor="streaming">min/day</label>
               </div>
               <button>CALCULATE</button>
-              <p>We’re talking YouTube, Netflix, Twitch, HBO etc.</p>
+              <p className="paddings">
+                We’re talking YouTube, Netflix, Twitch, HBO etc.
+              </p>
             </div>
           </form>
         </>

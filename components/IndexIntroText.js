@@ -6,30 +6,29 @@ function IndexIntroText() {
     <>
       <h2>How much CO2 do you emit when online?🤔</h2>
       <div>
-        <p>
+        <p className="white_border">
           To make all data relateable, we will be using <span>beans</span> as a
           means of comparison
         </p>
       </div>
-      <div>
-        <div>
-          <p>1 x </p>
+      <div className="flex_hor_wrapper beans">
+        <div className="flex_hor_wrapper">
+          <p>1</p>
           <SingleBean></SingleBean>
-          <p>
-            <span>=</span>
-            0.00052g CO2e
-          </p>
+          <span>=</span>
+          <p>0.00052g CO2e</p>
         </div>
-        <div>
-          <p>1000 x </p>
+        <div className="flex_hor_wrapper">
+          <p>1000</p>
           <SingleBean></SingleBean>
-          <p>
-            <span>=</span>
-            5.2g CO2e
-          </p>
+          <span>=</span>
+          <p>5.2g CO2e</p>
         </div>
       </div>
-      <h3>Now that you know, let's get started</h3>
+      <h3>
+        Now that you know <br />
+        Let's get started
+      </h3>
     </>
   );
 }

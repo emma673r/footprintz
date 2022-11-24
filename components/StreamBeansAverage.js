@@ -7,10 +7,11 @@ import EndAverage from "./EndAverage";
 import { useState, useEffect } from "react";
 
 function StreamBeansAverage({ ...props }) {
+  console.log("hello", props.calculatedState);
   const [showResult, setShowResult] = useState(false);
   // const [getEnding, setGetEnding] = useState("");
 
-  const [ending, setEnding] = useState(["good", "bad", "average"]);
+  // const [ending, setEnding] = useState(["good", "bad", "average"]);
 
   const carbonData = {
     name: "g CO2e",
@@ -62,22 +63,37 @@ function StreamBeansAverage({ ...props }) {
   //   setGetEnding(calculateEnding());
   // }, [calculateBeans, avgBeans.min, avgBeans.max]);
 
+  // function calculateEnding() {
+  //   if (calculateBeans() < avgBeans.min) {
+  //     return 1;
+  //   } else if (calculateBeans() > avgBeans.max) {
+  //     return 3;
+  //   } else {
+  //     return 2;
+  //   }
+  // }
+
   // setGetEnding(calculateEnding());
   return (
     <>
-      {showResult && <EndAverage />}
+      {showResult && <EndAverage calculatedState={props.calculatedState} />}
       {!showResult && (
         <>
           {" "}
           <h2>Your daily emissions in beans is {calculateBeans()} beans</h2>
-          <p>{calculateState()}</p>
-          <p>The average Europeans daily streaming emissions in beans is equivalent to 2 915 550 beans</p>
-          <p>
+          <div className="flex_wrapper">{calculateState()}</div>
+          <h2>
+            The average Europeans daily streaming emissions in beans is
+            equivalent to 2 915 550 beans
+          </h2>
+          <div className="flex_wrapper">
             <AverageBeans />
-          </p>
-          <button className="no_class" onClick={() => setShowResult(true)}>
-            <WhiteArrow />
-          </button>
+          </div>
+          <div className="flex_wrapper">
+            <button className="no_class" onClick={() => setShowResult(true)}>
+              <WhiteArrow />
+            </button>
+          </div>
         </>
       )}
     </>

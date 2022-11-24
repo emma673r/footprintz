@@ -100,6 +100,23 @@ footer {
   background-color: $color-dark;
   padding-bottom: 2vh;
   padding-top: 2vh;
+  width: 100vw;
+}
+
+.paddings {
+  padding-top: 6vh;
+  padding-bottom: 10vh;
+}
+
+.stream-form {
+  padding: 10vh;
+}
+
+.input-group {
+  padding-bottom: 10vh;
+  label {
+    padding-left: 4vw;
+  }
 }
 
 button {
@@ -118,6 +135,7 @@ button:hover {
 input[type="text"] {
   outline: none;
   border: $color-lightest solid 2px;
+  width: 12ch;
   max-height: 3rem;
   padding: 1.4rem;
   background-color: transparent;
@@ -150,15 +168,25 @@ span {
   margin-bottom: 2vh;
 }
 
-.no_class {
-  border: none;
-  padding: 0;
-  background-color: none;
+.book,
+.medal,
+.icecream {
+  width: 60%;
 }
-.no_class:hover {
+.no_class {
+  display: flex;
+  justify-self: center;
+  align-self: center;
   border: none;
   padding: 0;
-  background-color: none;
+  background-color: transparent;
+  padding-bottom: 6vh;
+  padding-top: 6vh;
+}
+
+.no_class:hover {
+  background-color: transparent;
+  scale: 1.2;
 }
 
 .s-buttons {
@@ -191,6 +219,10 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.beans {
+  gap: 5vw;
 }
 
 .be_aware {
