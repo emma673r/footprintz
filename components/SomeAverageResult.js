@@ -1,5 +1,5 @@
 import React from "react";
-import WhiteArrow from "./WhiteArrow";
+
 function SomeAverageResult() {
   return (
     <>
@@ -9,7 +9,7 @@ function SomeAverageResult() {
         The typical European is on their socials 167.4 min/day and emits 153.45g
         CO2e/day.
       </p>
-      <WhiteArrow></WhiteArrow>
+      <div>WHITE ARROW HERE</div>
     </>
   );
 }

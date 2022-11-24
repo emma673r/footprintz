@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import Icecream from "./Icecream";
 
 function EndAverage() {
   return (
@@ -10,7 +9,7 @@ function EndAverage() {
         ways to improve your carbon footprint here (INSERT LINK) Good job
         anyways!💚♻️
       </p>
-      <Icecream></Icecream>
+      <p>Insert SVG icecream here</p>
       <button>Restart</button>
     </>
   );

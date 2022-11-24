@@ -1,5 +1,5 @@
 import React from "react";
-import WhiteArrow from "./WhiteArrow";
+
 function BeansGood() {
   return (
     <>
@@ -10,7 +10,7 @@ function BeansGood() {
         to 2.915.550 beans
       </p>
       <p>Insert avarage bean SVG</p>
-      <WhiteArrow></WhiteArrow>
+      <p>White arrow goes here</p>
     </>
   );
 }

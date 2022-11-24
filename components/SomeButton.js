@@ -1,9 +1,15 @@
 import React from "react";
 
-function SomeButton({ loadSomeForm }) {
+function SomeButton({ loadStreamingForm }) {
   return (
     <>
-      <button onClick={() => loadSomeForm(true)}>How much social media do I use?</button>
+      <button
+        onClick={() => {
+          loadStreamingForm(true);
+        }}
+      >
+        How much social media do I use?
+      </button>
     </>
   );
 }
