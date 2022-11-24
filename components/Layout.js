@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/header.module.scss";
+
 import Anchor from "../components/Anchor";
 //!! all inputs written like this:
 //TODO  <input type="text" pattern="[0-999]+" />
