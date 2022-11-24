@@ -5,10 +5,6 @@ import StreamBeansAverage from "./StreamBeansAverage";
 function StreamAverageResult({ ...props }) {
   const [beanResult, setBeanResult] = useState(false);
 
-  const loadBeanResult = (state) => {
-    setBeanResult(state);
-  };
-
   function calculateEmissions() {
     return parseInt(props.receivedData.minutes * props.streamingDataJson.impactNumber);
   }
@@ -25,7 +21,9 @@ function StreamAverageResult({ ...props }) {
           </h2>
           <p>YOU ARE {props.calculatedState} AVERAGE</p>
           <p>The typical European streams 167.4 min/day and emits 153.45g CO2e/day.</p>
-          <WhiteArrow loadBeanResult={loadBeanResult} />
+          <button className="no_class" onClick={() => setBeanResult(true)}>
+            <WhiteArrow />
+          </button>
         </>
       )}
     </>

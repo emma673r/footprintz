@@ -1,8 +1,7 @@
 import React from "react";
 import { useRef } from "react";
-import { useState, useEffect } from "react";
-import StreamGoodResult from "../components/StreamGoodResult";
-import StreamBadResult from "../components/StreamBadResult";
+import { useState } from "react";
+
 import StreamAverageResult from "../components/StreamAverageResult";
 
 function StreamForm() {
